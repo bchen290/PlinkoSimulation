@@ -56,8 +56,7 @@ public class PlinkoSimulation {
 
     private static void printProbability(){
         for(DroppingLocation droppingLocation : DroppingLocation.values()){
-            BigDecimal bigDecimal = new BigDecimal(droppingLocation.getNumTimesDroppedIn10000());
-            System.out.println("Probability of " + droppingLocation + " winning is: " + bigDecimal.divide(new BigDecimal(NUMBER_OF_TRIALS)));
+            System.out.println("Probability of " + droppingLocation + " winning is: " + new BigDecimal(droppingLocation.getNumTimesDroppedIn10000()).divide(new BigDecimal(NUMBER_OF_TRIALS)));
         }
     }
 }
