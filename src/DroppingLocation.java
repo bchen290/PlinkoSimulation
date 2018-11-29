@@ -20,4 +20,8 @@ enum DroppingLocation {
     public int getNumTimesDroppedIn10000(){
         return numTimesDroppedIn10000;
     }
+
+    public void resetNumTimesDroppedIn10000(){
+        this.numTimesDroppedIn10000 = 0;
+    }
 }

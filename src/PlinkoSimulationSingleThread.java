@@ -1,18 +1,21 @@
 import java.math.BigDecimal;
 
-@SuppressWarnings({"BigDecimalMethodWithoutRoundingCalled", "SameParameterValue"})
-public class PlinkoSimulation {
+@SuppressWarnings({"BigDecimalMethodWithoutRoundingCalled", "SameParameterValue", "Duplicates"})
+public class PlinkoSimulationSingleThread {
     private static PlinkoBoard plinkoBoard = new PlinkoBoard();
     private static PlinkoChip plinkoChip = new PlinkoChip();
 
-    private static final int WINNER_COLUMN = 8;
-    private static final int WINNER_ROW = 12;
-
-    private static final int NUMBER_OF_TRIALS = 1000;
-
     public static void main(String[] args) throws Exception{
+        for (DroppingLocation droppingLocation : DroppingLocation.values()) {
+            droppingLocation.resetNumTimesDroppedIn10000();
+        }
+
+        System.out.println("\nRunning for " + Constants.NUMBER_OF_TRIALS + " trials");
+
+        long startTime = System.nanoTime();
+
         for(DroppingLocation droppingLocation : DroppingLocation.values()){
-            for(int i = 0; i < NUMBER_OF_TRIALS; i++) {
+            for(int i = 0; i < Constants.NUMBER_OF_TRIALS; i++) {
                 plinkoChip.setColumn(droppingLocation);
                 plinkoChip.setRow(0);
                 plinkoBoard.putChipInSpot(plinkoChip);
@@ -25,7 +28,13 @@ public class PlinkoSimulation {
             }
         }
 
+        long endTime = System.nanoTime();
+
+        long duration = (endTime - startTime);
+
         printProbability();
+        System.out.println("Single thread took: " + duration/1e+9 + " seconds");
+
     }
 
     private static void simulateDrop(boolean animate) throws Exception{
@@ -51,12 +60,12 @@ public class PlinkoSimulation {
     }
 
     private static boolean isWinner(){
-        return plinkoChip.getColumn() == WINNER_COLUMN && plinkoChip.getRow() == WINNER_ROW;
+        return plinkoChip.getColumn() == Constants.WINNER_COLUMN && plinkoChip.getRow() == Constants.WINNER_ROW;
     }
 
     private static void printProbability(){
         for(DroppingLocation droppingLocation : DroppingLocation.values()){
-            System.out.println("Probability of " + droppingLocation + " winning is: " + new BigDecimal(droppingLocation.getNumTimesDroppedIn10000()).divide(new BigDecimal(NUMBER_OF_TRIALS)));
+            System.out.println("Probability of " + droppingLocation + " winning is: " + new BigDecimal(droppingLocation.getNumTimesDroppedIn10000()).divide(new BigDecimal(Constants.NUMBER_OF_TRIALS)));
         }
     }
 }
