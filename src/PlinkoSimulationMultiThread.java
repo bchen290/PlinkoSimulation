@@ -30,19 +30,19 @@ public class PlinkoSimulationMultiThread {
                     plinkoBoard.putChipInSpot(plinkoChip);
 
                     for(int i = 0; i < PlinkoBoard.BOARD_HEIGHT - 1; i++){
-                        double randomNumber;
+                        int randomNumber;
 
                         if(plinkoChip.getColumn() == 0){
                             randomNumber = 1;
                         }else if(plinkoChip.getColumn() == PlinkoBoard.BOARD_WIDTH - 1){
                             randomNumber = 0;
                         }else{
-                            randomNumber = ThreadLocalRandom.current().nextDouble();
+                            randomNumber = ThreadLocalRandom.current().nextInt(2);
                         }
 
                         try {
                             plinkoChip.moveChipDownOneRow();
-                            plinkoChip.moveColumn(randomNumber > 0.5 ? 1 : -1);
+                            plinkoChip.moveColumn(randomNumber == 1 ? 1 : -1);
                         }catch (Exception e){
                             e.printStackTrace();
                         }
@@ -69,7 +69,6 @@ public class PlinkoSimulationMultiThread {
 
         long duration = (endTime - startTime);
 
-        System.out.println();
         printProbability();
         System.out.println("Multi thread took: " + duration/1e+9 + " seconds");
     }

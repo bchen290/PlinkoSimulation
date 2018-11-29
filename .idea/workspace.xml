@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e123e19-f478-4775-906f-b38b0f11e74c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PlinkoSimulationComparison.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PlinkoSimulationMultiThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PlinkoSimulationSingleThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Plinko/DroppingLocation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Plinko/DroppingLocation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Plinko/PlinkoSimulation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DroppingLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DroppingLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlinkoSimulation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlinkoSimulationMultiThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlinkoSimulationMultiThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlinkoSimulationSingleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlinkoSimulationSingleThread.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,25 +25,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="15" />
+          <entry key="java" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="15" />
+          <entry key="JAVA" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="5856" />
-          <entry key="txt" value="43" />
+          <entry key="java" value="5930" />
+          <entry key="txt" value="128" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5856" />
-          <entry key="PLAIN_TEXT" value="56" />
+          <entry key="JAVA" value="5930" />
+          <entry key="PLAIN_TEXT" value="141" />
         </counts>
       </usages-collector>
     </session>
@@ -57,10 +51,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PlinkoSimulationMultiThread.java">
+        <entry file="file://$PROJECT_DIR$/src/PlinkoSimulationSingleThread.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
-              <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+              <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PlinkoSimulationMultiThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#199#295#0" expanded="true" />
@@ -72,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DroppingLocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
+            <state relative-caret-position="399">
               <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="e#556#557#0" expanded="true" />
@@ -82,7 +88,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -127,9 +133,9 @@
         <option value="$PROJECT_DIR$/src/PlinkoSimulationMultithread.java" />
         <option value="$PROJECT_DIR$/src/PlinkoSimulationComparison.java" />
         <option value="$PROJECT_DIR$/src/DroppingLocation.java" />
-        <option value="$PROJECT_DIR$/src/PlinkoSimulationMultiThread.java" />
-        <option value="$PROJECT_DIR$/src/PlinkoSimulationSingleThread.java" />
         <option value="$PROJECT_DIR$/src/Constants.java" />
+        <option value="$PROJECT_DIR$/src/PlinkoSimulationSingleThread.java" />
+        <option value="$PROJECT_DIR$/src/PlinkoSimulationMultiThread.java" />
       </list>
     </option>
   </component>
@@ -174,7 +180,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543462957276" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543465423223" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -191,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PlinkoSimulationMultiThread">
+  <component name="RunManager" selected="Application.PlinkoSimulationComparison">
     <configuration name="PlinkoSimulationComparison" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PlinkoSimulationComparison" />
       <module name="Plinko" />
@@ -215,13 +221,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.PlinkoSimulationSingleThread" />
-      <item itemvalue="Application.PlinkoSimulationComparison" />
       <item itemvalue="Application.PlinkoSimulationMultiThread" />
+      <item itemvalue="Application.PlinkoSimulationComparison" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PlinkoSimulationMultiThread" />
         <item itemvalue="Application.PlinkoSimulationComparison" />
+        <item itemvalue="Application.PlinkoSimulationMultiThread" />
         <item itemvalue="Application.PlinkoSimulationSingleThread" />
       </list>
     </recent_temporary>
@@ -238,7 +244,7 @@
       <updated>1543356178660</updated>
       <workItem from="1543356179803" duration="13395000" />
       <workItem from="1543435984751" duration="42000" />
-      <workItem from="1543455956269" duration="5749000" />
+      <workItem from="1543455956269" duration="7750000" />
     </task>
     <task id="LOCAL-00001" summary="Inline probability calculation">
       <created>1543371978459</created>
@@ -247,16 +253,24 @@
       <option name="project" value="LOCAL" />
       <updated>1543371978459</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add proper multithreading and comparison between single and multithreaded">
+      <created>1543463034895</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543463034895</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19186000" />
+    <option name="totallyTimeSpent" value="21187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25725028" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25725028" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -295,7 +309,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inline probability calculation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inline probability calculation" />
+    <MESSAGE value="Add proper multithreading and comparison between single and multithreaded" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add proper multithreading and comparison between single and multithreaded" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SimulationThread.java" />
@@ -331,13 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlinkoSimulationSingleThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PlinkoSimulationComparison.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -345,9 +353,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PlinkoSimulationSingleThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DroppingLocation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
+        <state relative-caret-position="399">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="e#556#557#0" expanded="true" />
@@ -356,21 +374,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlinkoSimulationMultiThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#199#295#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PlinkoSimulationMultiThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#199#295#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

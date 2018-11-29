@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.util.concurrent.ThreadLocalRandom;
 
 @SuppressWarnings({"BigDecimalMethodWithoutRoundingCalled", "SameParameterValue", "Duplicates"})
 public class PlinkoSimulationSingleThread {
@@ -39,18 +40,18 @@ public class PlinkoSimulationSingleThread {
 
     private static void simulateDrop(boolean animate) throws Exception{
         for(int i = 0; i < PlinkoBoard.BOARD_HEIGHT - 1; i++){
-            double randomNumber;
+            int randomNumber;
 
             if(plinkoChip.getColumn() == 0){
                 randomNumber = 1;
             }else if(plinkoChip.getColumn() == PlinkoBoard.BOARD_WIDTH - 1){
                 randomNumber = 0;
             }else{
-                randomNumber = Math.random();
+                randomNumber = ThreadLocalRandom.current().nextInt(2);
             }
 
             plinkoChip.moveChipDownOneRow();
-            plinkoChip.moveColumn(randomNumber > 0.5 ? 1 : -1);
+            plinkoChip.moveColumn(randomNumber == 1 ? 1 : -1);
             plinkoBoard.putChipInSpot(plinkoChip);
 
             if(animate) {
