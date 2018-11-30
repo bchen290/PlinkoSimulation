@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11 -g   CMakeFiles/PlinkoCPP.dir/PlinkoSimulationSingleThread.cpp.o CMakeFiles/PlinkoCPP.dir/PlinkoSimulationMultiThread.cpp.o  -o PlinkoCPP -pthread 
