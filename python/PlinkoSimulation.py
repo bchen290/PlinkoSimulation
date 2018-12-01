@@ -1,5 +1,6 @@
 import calendar
 import time
+import random
 
 NUMBER_OF_TRIALS = 1000
 NUMBER_OF_LOCATIONS = 9
@@ -19,24 +20,6 @@ chip_row = 0
 chip_column = 0
 random_number = 0
 
-
-class XORRng:
-    x = calendar.timegm(time.gmtime())
-    y = 362436069
-    z = 521288629
-    w = 88675123
-
-    def xor128(self):
-        t = self.x ^ (self.x << 11)
-        self.x = self.y
-        self.y = self.z
-        self.z = self.w
-        self.w = self.w ^ (self.w >> 19) ^ (t ^ (t >> 8))
-        return self.w
-
-
-random = XORRng()
-
 start = time.perf_counter()
 
 for i in range(NUMBER_OF_LOCATIONS):
@@ -50,10 +33,10 @@ for i in range(NUMBER_OF_LOCATIONS):
             elif chip_column == BOARD_WIDTH:
                 random_number = -1
             else:
-                random_number = random.xor128()
+                random_number = random.random()
 
             chip_row += 1
-            chip_column += 1 if random_number > 0 else -1
+            chip_column += 1 if random_number > 0.5 else -1
 
         if chip_row == WINNER_ROW and chip_column == WINNER_COLUMN:
             locationWins[i] += 1
